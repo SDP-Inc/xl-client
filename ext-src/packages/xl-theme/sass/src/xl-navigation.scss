@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #393F4F;
+
+  .navitem-wrap {
+    color: #F7F7F7;
+    height: 120px;
+    padding: 30px 20px 20px 20px;
+    cursor: pointer;
+    text-align: center;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    outline: 0 !important;
+  }
+  .navitem-wrap:hover {
+    background-color: #4E5569;
+  }
+  .navitem-wrap.active {
+    background-color: #2C3141;
+    color: #79D3C9;
+    border-right: 5px solid #79D3C9;
+  }
+
+  .navitem > h1 {
+    margin: 0;
+    padding: 0;
+  }
+  .navitem > h3 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+  }
+}
