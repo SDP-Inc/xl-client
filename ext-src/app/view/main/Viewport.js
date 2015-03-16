@@ -9,7 +9,8 @@
 Ext.define('xlApp.view.main.Viewport', {
     extend: 'Ext.container.Container',
     requires: [
-        'xlApp.model.navigation.NavBarItem'
+        'xlApp.model.navigation.NavBarItem',
+        'xlApp.view.workbooks.Workbooks'
     ],
 
     xtype: 'app-main',
@@ -83,19 +84,19 @@ Ext.define('xlApp.view.main.Viewport', {
             activeItem: 0,
             items: [{
                 itemId: 'card-0',
-                html: '<h2>Explore Workbooks</h2><hr>'
+                xtype: 'workbook-view'
             }, {
                 itemId: 'card-1',
-                html: '<h2>DataSource Manager</h2><hr>'
+                html: '<h1>DataSource Manager</h1><hr>'
             }, {
                 itemId: 'card-2',
-                html: '<h2>Report Manager</h2><hr>'
+                html: '<h1>Report Manager</h1><hr>'
             }, {
                 itemId: 'card-3',
-                html: '<h2>Report Scheduler</h2><hr>'
+                html: '<h1>Report Scheduler</h1><hr>'
             }, {
                 itemId: 'card-4',
-                html: '<h2>Users & Groups</h2><hr>'
+                html: '<h1>Users & Groups</h1><hr>'
             }],
             style: {
                 'padding': '20px',
