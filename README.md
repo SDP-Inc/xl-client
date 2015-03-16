@@ -2,7 +2,7 @@
 UI for the Excel Management Application
 
 ## Setup
-This UI is currently using ExtJS 5. As such you should download Sencha Cmd: http://www.sencha.com/products/sencha-cmd/
+This UI is currently using ExtJS 5. As such you should download Sencha Cmd: [http://www.sencha.com/products/sencha-cmd/](http://www.sencha.com/products/sencha-cmd/)
 
 Next fork and clone the repository into some local directory:
 <pre><code>$ cd /w/git</code></pre>
@@ -17,4 +17,4 @@ Next start your favourite web server in the ext-src directory. Python within com
 <pre><code>$ cd git\xl-client\ext-src</code></pre>
 <pre><code>$ python -m SimpleHTTPServer</code></pre>
 
-Next navigate to http://localhost:8000 in your favorite browser
+Next navigate to [http://localhost:8000](http://localhost:8000) in your favorite browser
