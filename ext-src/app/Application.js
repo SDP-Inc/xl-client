@@ -7,7 +7,6 @@ Ext.define('xlApp.Application', {
     extend: 'Ext.app.Application',
     
     name: 'xlApp',
-
     stores: [
         // TODO: add global / shared stores her
     ],
