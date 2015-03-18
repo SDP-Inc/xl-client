@@ -83,6 +83,88 @@
 /* including package ext-theme-neptune */
 /* including package ext-theme-crisp */
 /* including package xl-theme */
+/* line 1, ../../sass/src/xl-mainview.scss */
+.mainview {
+  padding: 20px;
+  background-color: #FFF; }
+
+/* line 1, ../../sass/src/xl-navigation.scss */
+.navbar {
+  background-color: #393F4F; }
+  /* line 4, ../../sass/src/xl-navigation.scss */
+  .navbar .navbar-logo {
+    padding: 15px 10px;
+    background-color: #202637; }
+    /* line 8, ../../sass/src/xl-navigation.scss */
+    .navbar .navbar-logo .navbar-logo-text {
+      font-weight: bold;
+      font-size: 15px;
+      color: #9BC5C2; }
+  /* line 15, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem-wrap {
+    color: #F7F7F7;
+    height: 120px;
+    padding: 30px 20px 20px 20px;
+    cursor: pointer;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    outline: 0 !important; }
+  /* line 29, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem-wrap:hover {
+    background-color: #4E5569;
+    color: #FFF; }
+  /* line 33, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem-wrap.active {
+    background-color: #2C3141;
+    color: #79D3C9;
+    border-right: 5px solid #79D3C9; }
+  /* line 39, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem > h1 {
+    margin: 0;
+    padding: 0; }
+  /* line 43, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem > h3 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0; }
+
+/* line 1, ../../sass/src/xl-workbooks.scss */
+.workbook-view {
+  padding: 25px 10px 25px 0px; }
+  /* line 4, ../../sass/src/xl-workbooks.scss */
+  .workbook-view .workbook-wrap {
+    float: left;
+    padding: 15px 50px 30px 20px;
+    border: 1px solid #ABABAB;
+    border-left: 7px solid #31882B;
+    margin-right: 30px;
+    box-shadow: 3px 3px 10px -5px black;
+    cursor: pointer; }
+    /* line 13, ../../sass/src/xl-workbooks.scss */
+    .workbook-view .workbook-wrap .workbook-title-wrap {
+      margin-bottom: 5px; }
+      /* line 16, ../../sass/src/xl-workbooks.scss */
+      .workbook-view .workbook-wrap .workbook-title-wrap .workbook-title {
+        font-size: 14px;
+        font-weight: bold; }
+    /* line 21, ../../sass/src/xl-workbooks.scss */
+    .workbook-view .workbook-wrap .workbook-author {
+      color: #5A5A5A;
+      font-size: 11px;
+      font-weight: bold; }
+    /* line 26, ../../sass/src/xl-workbooks.scss */
+    .workbook-view .workbook-wrap .workbook-updatedon {
+      color: #5A5A5A;
+      font-size: 11px;
+      font-weight: bold; }
+  /* line 32, ../../sass/src/xl-workbooks.scss */
+  .workbook-view .workbook-wrap:hover {
+    box-shadow: 3px 3px 10px -3px black; }
+
 /* including package ext-theme-crisp */
 /** @class Ext.resizer.Resizer */
 /* including package ext-theme-neptune */
@@ -26608,57 +26690,3 @@ tr.x-grid-subtable-row {
 /* line 383, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-plain-toolbar-large-bc {
   background-position: 0 -3px; }
-
-/* line 390, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
-.x-btn-plain-toolbar-large-tr,
-.x-btn-plain-toolbar-large-br,
-.x-btn-plain-toolbar-large-mr {
-  padding-right: 3px; }
-
-/* line 396, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
-.x-btn-plain-toolbar-large-tl,
-.x-btn-plain-toolbar-large-bl,
-.x-btn-plain-toolbar-large-ml {
-  padding-left: 3px; }
-
-/* line 400, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
-.x-btn-plain-toolbar-large-tc {
-  height: 3px; }
-
-/* line 403, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
-.x-btn-plain-toolbar-large-bc {
-  height: 3px; }
-
-/* line 464, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
-.x-btn-plain-toolbar-large-mc {
-  padding: 1px 1px 1px 1px; }
-
-/*<if slicer>*/
-/* line 83, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px" !important; }
-
-/*</if slicer>*/
-/* */
-/* line 423, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-plain-toolbar-large {
-  border-color: transparent; }
-
-/* line 430, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-button-plain-toolbar-large {
-  height: 32px; }
-
-/* line 435, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-inner-plain-toolbar-large {
-  font: 300 16px/20px helvetica, arial, verdana, sans-serif;
-  color: #666666;
-  padding: 0 10px;
-  max-width: 100%; }
-  /* line 446, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-  .x-btn-icon-right > .x-btn-inner-plain-toolbar-large, .x-btn-icon-left > .x-btn-inner-plain-toolbar-large {
-    max-width: calc(100% - 32px); }
-
-/* line 453, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-icon-el-plain-toolbar-large {
-  height: 32px; }

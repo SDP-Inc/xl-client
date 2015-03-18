@@ -9,20 +9,28 @@
 Ext.define('xlApp.view.main.Viewport', {
     extend: 'Ext.container.Container',
     requires: [
-        'xlApp.model.navigation.NavBarItem',
-        'xlApp.view.workbooks.Workbooks'
+        'xlApp.view.workbooks.Workbooks',
+        'xlApp.view.datasource.DataSourceManager',
+        'xlApp.view.report.ReportManager',
+        'xlApp.view.report.ReportScheduler',
+        'xlApp.view.users.UserGroupManager'
     ],
 
     xtype: 'app-main',
-
     layout: 'border',
 
     initComponent: function() {
         var me = this,
-            store;
+            mainNavbarStore;
 
-        store = Ext.create('Ext.data.Store', {
-            model: 'xlApp.model.navigation.NavBarItem',
+        mainNavbarStore = Ext.create('Ext.data.Store', {
+            fields: [{
+                name: 'label',
+                type: 'string'
+            }, {
+                name: 'cls',
+                type: 'string'
+            }],
             data : [{
                 label: 'Explore Workbooks',
                 cls: 'desktop'
@@ -47,9 +55,10 @@ Ext.define('xlApp.view.main.Viewport', {
             cls: 'navbar',
             region: 'west',
             layout: 'fit',
-            width: 150,
-            store: store,
+            width: 140,
+            store: mainNavbarStore,
             tpl: [
+                '<div class="navbar-logo"><span class="navbar-logo-text">XL App</span></div>',
                 '<tpl for=".">',
                     '<div class="navitem-wrap" style="outline: none !important">',
                         '<div class="navitem">',
@@ -59,8 +68,7 @@ Ext.define('xlApp.view.main.Viewport', {
                             '<h3>{label}</h3>',
                         '</div>',
                     '</div>',
-                '</tpl>',
-                '<div class="x-clear"></div>'
+                '</tpl>'
             ],
             multiSelect: false,
             trackOver: true,
@@ -79,29 +87,30 @@ Ext.define('xlApp.view.main.Viewport', {
         }, {
             xtype: 'panel',
             itemId: 'main-view',
+            bodyCls: 'mainview',
             region: 'center',
             layout: 'card',
             activeItem: 0,
-            items: [{
-                itemId: 'card-0',
-                xtype: 'workbook-view'
-            }, {
-                itemId: 'card-1',
-                html: '<h1>DataSource Manager</h1><hr>'
-            }, {
-                itemId: 'card-2',
-                html: '<h1>Report Manager</h1><hr>'
-            }, {
-                itemId: 'card-3',
-                html: '<h1>Report Scheduler</h1><hr>'
-            }, {
-                itemId: 'card-4',
-                html: '<h1>Users & Groups</h1><hr>'
-            }],
             style: {
                 'padding': '20px',
                 'background-color': '#FFF'
             },
+            items: [{
+                itemId: 'workbookViewId',
+                xtype: 'workbook-view'
+            }, {
+                itemId: 'dataSourceMgrViewId',
+                xtype: 'datasource-manager'
+            }, {
+                itemId: 'reportMgrViewId',
+                xtype: 'reportmanager'
+            }, {
+                itemId: 'reportSchViewId',
+                xtype: 'reportscheduler'
+            }, {
+                itemId: 'userGroupViewId',
+                xtype: 'usergroup-manager'
+            }],
             listeners: {
                 afterrender: function() {
                     var navbar = me.down('#navbar');

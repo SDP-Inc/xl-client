@@ -1,6 +1,17 @@
 .navbar {
   background-color: #393F4F;
 
+  .navbar-logo {
+    padding: 12px 10px;
+    background-color: #202637;
+
+    .navbar-logo-text {
+      font-weight: bold;
+      font-size: 18px;
+      color: #FAFAFA;
+    }
+  }
+
   .navitem-wrap {
     color: #F7F7F7;
     height: 120px;

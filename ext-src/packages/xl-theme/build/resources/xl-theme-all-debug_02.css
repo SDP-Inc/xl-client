@@ -1,3 +1,57 @@
+/* line 390, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-btn-plain-toolbar-large-tr,
+.x-btn-plain-toolbar-large-br,
+.x-btn-plain-toolbar-large-mr {
+  padding-right: 3px; }
+
+/* line 396, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-btn-plain-toolbar-large-tl,
+.x-btn-plain-toolbar-large-bl,
+.x-btn-plain-toolbar-large-ml {
+  padding-left: 3px; }
+
+/* line 400, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-btn-plain-toolbar-large-tc {
+  height: 3px; }
+
+/* line 403, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-btn-plain-toolbar-large-bc {
+  height: 3px; }
+
+/* line 464, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-btn-plain-toolbar-large-mc {
+  padding: 1px 1px 1px 1px; }
+
+/*<if slicer>*/
+/* line 83, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-cmd-slicer.x-btn-plain-toolbar-large:before {
+  display: none;
+  content: "x-slicer:frame:3px 3px 3px 3px" !important; }
+
+/*</if slicer>*/
+/* */
+/* line 423, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-plain-toolbar-large {
+  border-color: transparent; }
+
+/* line 430, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-button-plain-toolbar-large {
+  height: 32px; }
+
+/* line 435, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-inner-plain-toolbar-large {
+  font: 300 16px/20px helvetica, arial, verdana, sans-serif;
+  color: #666666;
+  padding: 0 10px;
+  max-width: 100%; }
+  /* line 446, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+  .x-btn-icon-right > .x-btn-inner-plain-toolbar-large, .x-btn-icon-left > .x-btn-inner-plain-toolbar-large {
+    max-width: calc(100% - 32px); }
+
+/* line 453, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-icon-el-plain-toolbar-large {
+  height: 32px; }
+  /* line 457, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
   .x-btn-icon-left > .x-btn-icon-el-plain-toolbar-large, .x-btn-icon-right > .x-btn-icon-el-plain-toolbar-large {
     width: 32px; }
   /* line 462, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */

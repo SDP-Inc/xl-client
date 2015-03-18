@@ -83,6 +83,88 @@
 /* including package ext-theme-neptune */
 /* including package ext-theme-crisp */
 /* including package xl-theme */
+/* line 1, ../../sass/src/xl-mainview.scss */
+.mainview {
+  padding: 20px;
+  background-color: #FFF; }
+
+/* line 1, ../../sass/src/xl-navigation.scss */
+.navbar {
+  background-color: #393F4F; }
+  /* line 4, ../../sass/src/xl-navigation.scss */
+  .navbar .navbar-logo {
+    padding: 15px 10px;
+    background-color: #202637; }
+    /* line 8, ../../sass/src/xl-navigation.scss */
+    .navbar .navbar-logo .navbar-logo-text {
+      font-weight: bold;
+      font-size: 15px;
+      color: #9BC5C2; }
+  /* line 15, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem-wrap {
+    color: #F7F7F7;
+    height: 120px;
+    padding: 30px 20px 20px 20px;
+    cursor: pointer;
+    text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+    outline: 0 !important; }
+  /* line 29, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem-wrap:hover {
+    background-color: #4E5569;
+    color: #FFF; }
+  /* line 33, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem-wrap.active {
+    background-color: #2C3141;
+    color: #79D3C9;
+    border-right: 5px solid #79D3C9; }
+  /* line 39, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem > h1 {
+    margin: 0;
+    padding: 0; }
+  /* line 43, ../../sass/src/xl-navigation.scss */
+  .navbar .navitem > h3 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0; }
+
+/* line 1, ../../sass/src/xl-workbooks.scss */
+.workbook-view {
+  padding: 25px 10px 25px 0px; }
+  /* line 4, ../../sass/src/xl-workbooks.scss */
+  .workbook-view .workbook-wrap {
+    float: left;
+    padding: 15px 50px 30px 20px;
+    border: 1px solid #ABABAB;
+    border-left: 7px solid #31882B;
+    margin-right: 30px;
+    box-shadow: 3px 3px 10px -5px black;
+    cursor: pointer; }
+    /* line 13, ../../sass/src/xl-workbooks.scss */
+    .workbook-view .workbook-wrap .workbook-title-wrap {
+      margin-bottom: 5px; }
+      /* line 16, ../../sass/src/xl-workbooks.scss */
+      .workbook-view .workbook-wrap .workbook-title-wrap .workbook-title {
+        font-size: 14px;
+        font-weight: bold; }
+    /* line 21, ../../sass/src/xl-workbooks.scss */
+    .workbook-view .workbook-wrap .workbook-author {
+      color: #5A5A5A;
+      font-size: 11px;
+      font-weight: bold; }
+    /* line 26, ../../sass/src/xl-workbooks.scss */
+    .workbook-view .workbook-wrap .workbook-updatedon {
+      color: #5A5A5A;
+      font-size: 11px;
+      font-weight: bold; }
+  /* line 32, ../../sass/src/xl-workbooks.scss */
+  .workbook-view .workbook-wrap:hover {
+    box-shadow: 3px 3px 10px -3px black; }
+
 /* including package ext-theme-crisp */
 /** @class Ext.resizer.Resizer */
 /* including package ext-theme-neptune */
@@ -26687,26 +26769,3 @@ tr.x-grid-subtable-row {
 .x-btn-focus .x-btn-plain-toolbar-small-tc,
 .x-btn-focus .x-btn-plain-toolbar-small-bc {
   background-image: url(images/btn/btn-plain-toolbar-small-focus-corners.gif); }
-/* line 820, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-focus .x-btn-plain-toolbar-small-ml,
-.x-btn-focus .x-btn-plain-toolbar-small-mr {
-  background-image: url(images/btn/btn-plain-toolbar-small-focus-sides.gif); }
-/* line 823, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-focus .x-btn-plain-toolbar-small-mc {
-  background-color: transparent; }
-
-/* line 840, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-over .x-btn-plain-toolbar-small-tl,
-.x-btn-over .x-btn-plain-toolbar-small-bl,
-.x-btn-over .x-btn-plain-toolbar-small-tr,
-.x-btn-over .x-btn-plain-toolbar-small-br,
-.x-btn-over .x-btn-plain-toolbar-small-tc,
-.x-btn-over .x-btn-plain-toolbar-small-bc {
-  background-image: url(images/btn/btn-plain-toolbar-small-over-corners.gif); }
-/* line 844, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-over .x-btn-plain-toolbar-small-ml,
-.x-btn-over .x-btn-plain-toolbar-small-mr {
-  background-image: url(images/btn/btn-plain-toolbar-small-over-sides.gif); }
-/* line 847, ../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
-.x-btn-over .x-btn-plain-toolbar-small-mc {
-  background-color: #ebebeb; }

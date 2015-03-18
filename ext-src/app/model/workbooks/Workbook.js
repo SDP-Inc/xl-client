@@ -1,6 +1,13 @@
+/**
+ * Workbook Model Definition
+ */
 Ext.define('xlApp.model.workbooks.Workbook', {
     extend: 'Ext.data.Model',
     fields: [{
+        name: 'id',
+        type: 'auto',
+        unique: true
+    }, {
         name: 'label',
         type: 'string'
     }, {
@@ -11,4 +18,4 @@ Ext.define('xlApp.model.workbooks.Workbook', {
         type: 'date',
         dateFormat: 'M/d/Y'
     }]
-})
+});
